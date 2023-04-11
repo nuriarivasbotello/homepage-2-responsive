@@ -12,14 +12,91 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Barlow:wght@600&family=League+Spartan:wght@400;700&display=swap"
       rel="stylesheet"
-      href="css/normalize.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="css/styles.css"
+      href="./css/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
     />
     <title>Vite App</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <img
+          class="logo"
+          src="./assets/images/logo.svg"
+          alt="Logo"
+        />
+        <div
+          id="toggle-menu"
+          class="toggle-menu"
+        >
+          <img
+            class="burguer"
+            src="./assets/images/icon-hamburger.svg"
+            alt="hamburguer icon"
+          />
+        </div>
+      </div>
+      <nav
+        id="main-nav"
+        class="main-nav hide"
+      >
+        <ul class="main-menu">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="contact"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="title">
+        <h1>WE ARE CREATIVES</h1>
+        <img
+          src="./assets/images/icon-arrow-down.svg"
+          alt="arrow"
+        />
+      </div>
+    </header>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>

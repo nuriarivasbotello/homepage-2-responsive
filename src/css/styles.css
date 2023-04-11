@@ -22,6 +22,91 @@ a {
 }
 
 body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   margin: 0;
-  background-color: #111;
+  background-color: #d55252;
 }
+.header {
+  height: 100vh;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/mobile/image-header.jpg);
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  width: 123px;
+  height: 24px;
+}
+.main-menu {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+  gap: 40px;
+  font-family: 'Barlow', sans-serif;
+  color: rgb(154, 154, 154);
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .main-menu {
+    width: 800px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    left: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10rem;
+    background-image: none;
+  }
+}
+.hide {
+  display: none;
+}
+.contact {
+  width: 140px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-family: 'Fraunces', serif;
+  color: black;
+  background-color: rgb(255, 221, 0);
+}
+.toggle-menu {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1; /* Orden en el que aparece las cosas en el eje*/
+}
+@media screen and (min-width: 768px) {
+  .burguer {
+    display: none;
+  }
+}
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  letter-spacing: 4px;
+  background-color: red;
+}
+/*text align center y flechas (como es imagen) con el margin auto*/
