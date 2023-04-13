@@ -73,7 +73,7 @@ body {
   padding-top: 50px;
   align-items: center;
   gap: 40px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   color: rgb(154, 154, 154);
   background-color: white;
 }
@@ -101,12 +101,15 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   color: black;
   background-color: rgb(255, 221, 0);
 }
 @media screen and (min-width: 768px) {
   .contact {
+    background-color: rgb(255, 255, 255);
+  }
+  .contact:hover {
     background-color: lightblue;
   }
 }
@@ -188,7 +191,7 @@ body {
 .title-little {
   position: relative;
   top: 10px;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 40px;
 }
 .paragraph {
@@ -201,9 +204,15 @@ body {
   }
 }
 .learn-more {
+  border-bottom: 5px rgba(255, 230, 0, 0.572) solid;
+}
+.learn-more:hover {
   border-bottom: 5px rgb(255, 230, 0) solid;
 }
 .learn-more-red {
+  border-bottom: 5px rgba(236, 72, 72, 0.305) solid;
+}
+.learn-more-red:hover {
   border-bottom: 5px rgb(236, 72, 72) solid;
 }
 @media screen and (min-width: 768px) {
@@ -269,28 +278,40 @@ body {
   }
 }
 .testimonials {
+  position: relative;
+  top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
-@media screen and (min-width: 768px) {
-  .testimonials {
-  }
-}
+
 .title-testimonials {
-  font-family: 'Fraunces', serif;
+  position: relative;
+  left: 40px;
+  font-family: "Fraunces", serif;
   letter-spacing: 5px;
   font-size: 12px;
   color: rgb(167, 170, 173);
 }
 .card {
+  position: relative;
+  top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
 .profile {
   width: 72px;
   border-radius: 50%;
@@ -300,13 +321,50 @@ body {
   text-align: center;
   color: rgb(91, 99, 109);
 }
-.name {
-}
 .job {
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
   font-size: 15px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 100;
   color: rgb(167, 170, 173);
+}
+.square {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .square {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+}
+.bottom {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 50px;
+  background-color: rgb(144, 212, 198);
+}
+.last-menu {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(69, 141, 126);
+}
+.last-menu:hover {
+  color: white;
+}
+.social-media {
+  width: 164px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
 }
